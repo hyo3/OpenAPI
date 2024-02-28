@@ -1,0 +1,17 @@
+{
+  "name": "resources",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "openapi-generator validate -i ./spec/petstore.yaml",
+    "generate": "openapi-generator-cli generate -g nodejs-express-server -i ./openapi.yml -o ./src"
+  
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
